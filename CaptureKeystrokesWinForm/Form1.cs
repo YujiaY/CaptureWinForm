@@ -10,13 +10,19 @@ using System.Windows.Forms;
 
 /// <summary>
 /// Demonstrates event handlers for capturing keystrokes and mouseclick in a windows forms app.
+/// \author    Yujia
+/// \version   V1.0
+/// \date      2017-11-01
 /// </summary>
 
-namespace CaptureKeystrokesWinForm
+
+namespace CapturesWinForm
 {
     public partial class Form1 : Form
     {
-        //Set up the counters
+        /// <summary>
+        /// Set up some counters
+        /// </summary>
         private int keystrokeCounter = 0;
         private int rightclickCounter = 0;
         private int leftclickCounter = 0;
@@ -26,6 +32,9 @@ namespace CaptureKeystrokesWinForm
             InitializeComponent();
         }
 
+        /// <summary>
+        /// @brief Change and display the counter
+        /// </summary>
         private void countKeystrokes()
         {
             // Count all the keystrokes entered into any textbox including backspace char
@@ -33,48 +42,75 @@ namespace CaptureKeystrokesWinForm
             labelCount.Text = "Number of keystrokes = " + keystrokeCounter.ToString();
 
 
-            /// The following code would cause something different 
+            /// @deprecated The following code would cause something different 
             /// between keyup and keydown
+            ///  
+            // <code>
             //if (keystrokeCounter==1) // first time only
             //{
-           //     labelDuplicate.Text = ""; // clear it
-           // }
-           ///So we now ignore the code.
+            //     labelDuplicate.Text = ""; // clear it
+            // }
+            // </code>
+            /// @deprecated  So we now ignore the code.
         }
 
-        // This is the default event handler 
+
+        /// <summary>
+        /// @brief Record the key stroke in TextBox1
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             countKeystrokes();
         }
 
+
+        /// <summary>
+        /// @brief Record the key stroke in TextBox2
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
             countKeystrokes();
         }
 
-        // To record the keystroke when the key is released:
+        /// <summary>
+        /// @brief To record the keystroke when the key is released:
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox1_KeyUp(object sender, KeyEventArgs e)
         {
             if (sender == textBox1) // sender refers to the control that triggered the event
             {
-                //if ((e.KeyCode >= Keys.A && e.KeyCode <= Keys.Z) || (e.KeyCode >= Keys.D0 && e.KeyCode <= Keys.D9) || e.KeyCode == Keys.Back)
                 labelDuplicate.Text += e.KeyCode.ToString();
                 
             }
         }
 
+        /// <summary>
+        /// @brief To record the keystroke when the key is released:
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void textBox2_KeyDown(object sender, KeyEventArgs e)
         {
-            if (sender == textBox2) // sender refers to the control that triggered the event
+            if (sender == textBox2) //!< sender refers to the control that triggered the event
             {
                 //The keystroke in the textBox2 is ignored so there is no code for it.
             }
         }
 
-
+        /// <summary>
+        /// @brief To record the Mouse Click:
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ClickBtn_MouseClick(Object sender, MouseEventArgs e) {
 
+            
             if (e.Button == MouseButtons.Right)
             {
                 rightclickCounter++;

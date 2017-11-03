@@ -1,4 +1,4 @@
-﻿namespace CaptureKeystrokesWinForm
+﻿namespace CapturesWinForm
 {
     partial class Form1
     {

@@ -1,0 +1,25 @@
+var class_captures_win_form_1_1_form1 =
+[
+    [ "Form1", "class_captures_win_form_1_1_form1.html#a40fb49a1cec8d71e3d3248063ab65d95", null ],
+    [ "ClickBtn_MouseClick", "class_captures_win_form_1_1_form1.html#a591f3235adddede0ce1f21b21da9d1ae", null ],
+    [ "countKeystrokes", "class_captures_win_form_1_1_form1.html#a71df2a10b9673505ba7978f2a62acfaf", null ],
+    [ "Dispose", "class_captures_win_form_1_1_form1.html#a1e8c2046bd833e426fe6213ffda1b37c", null ],
+    [ "InitializeComponent", "class_captures_win_form_1_1_form1.html#aef972cdecb17fdb7d90416ffb1e784e3", null ],
+    [ "textBox1_KeyUp", "class_captures_win_form_1_1_form1.html#ae348405d062053be424b235def544a7e", null ],
+    [ "textBox1_TextChanged", "class_captures_win_form_1_1_form1.html#a67cd261419b68385a05b949ea8f04e18", null ],
+    [ "textBox2_KeyDown", "class_captures_win_form_1_1_form1.html#a7883c784e68f971bae812bfcebf05307", null ],
+    [ "textBox2_TextChanged", "class_captures_win_form_1_1_form1.html#af4cd41d4c2ddc1d6fbf8045ab316901d", null ],
+    [ "ClickBtn", "class_captures_win_form_1_1_form1.html#acf8e535b23b071eaf3d91ec78f499bf7", null ],
+    [ "components", "class_captures_win_form_1_1_form1.html#ae7e906b637c1f291ea063209c33b5bbe", null ],
+    [ "keystrokeCounter", "class_captures_win_form_1_1_form1.html#aecc53bb9519868e56d8295d5fe84ebaf", null ],
+    [ "label1", "class_captures_win_form_1_1_form1.html#ac17f2a1faf9f61bd46d6ee9f2f97092c", null ],
+    [ "label2", "class_captures_win_form_1_1_form1.html#aa4a0d199787932fcb77e64f64f8ae271", null ],
+    [ "labelCount", "class_captures_win_form_1_1_form1.html#acb5b62e6da8c84311cde57b66f27697c", null ],
+    [ "labelDuplicate", "class_captures_win_form_1_1_form1.html#ac817095a3a570c846df78164049ccad6", null ],
+    [ "LeftClick_Count", "class_captures_win_form_1_1_form1.html#a103fff24084033bb4587c866dd4d99e2", null ],
+    [ "leftclickCounter", "class_captures_win_form_1_1_form1.html#a9b199e3e07e3d624161610e39160a9e0", null ],
+    [ "RightClick_Count", "class_captures_win_form_1_1_form1.html#a1eb2eee1020987b43cf076f5d91bf76f", null ],
+    [ "rightclickCounter", "class_captures_win_form_1_1_form1.html#a0a54fcdebbf80e2384ddfb4f79f8aa9c", null ],
+    [ "textBox1", "class_captures_win_form_1_1_form1.html#a4ba356167e6e1beb76bf4315631f1445", null ],
+    [ "textBox2", "class_captures_win_form_1_1_form1.html#a76cd254fa9592e7633964c0fd8a3b66f", null ]
+];
